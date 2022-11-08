@@ -11,6 +11,12 @@
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 个人日记 </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -23,6 +29,12 @@
       
         <content type="html"><![CDATA[<p>请”熊古屋”入侵者品尝布也多多</p>]]></content>
       
+      
+      <categories>
+          
+          <category> Ubuntu 指南 </category>
+          
+      </categories>
       
       
     </entry>
