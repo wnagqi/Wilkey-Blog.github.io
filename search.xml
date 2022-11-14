@@ -4,11 +4,30 @@
   
     
     <entry>
+      <title>maven相关学习</title>
+      <link href="/2022/11/14/maven%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2022/11/14/maven%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Java后端 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>数据结构之图</title>
       <link href="/2022/11/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E5%9B%BE/"/>
       <url>/2022/11/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E5%9B%BE/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="图的定义"><a href="#图的定义" class="headerlink" title="图的定义"></a>图的定义</h2><p>图G由顶点集V和边集E组成，记为G&#x3D;(V,E)，其中V(G)表示图G中顶点的有限集；E(G)表示图G中顶点之间的关系（边）集合。若V&#x3D;{v1.v2….,vn}，则用|V|表示图G中顶点的个数，也称图G的阶，E&#x3D;{(u,v)|u∈V，v∈V}，用|E|表示图G中边的条数。</p><p>注意：线性表可以是空表，树可以是空树，但是图不可以是空，即V一定是非空集。</p><p><img src="/2022/11/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E5%9B%BE/1668148187155.png" alt="1668148187155"></p><h2 id="图的应用"><a href="#图的应用" class="headerlink" title="图的应用"></a>图的应用</h2><p><img src="/2022/11/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E5%9B%BE/1668148294907.png" alt="1668148294907"></p><h2 id="图的分类"><a href="#图的分类" class="headerlink" title="图的分类"></a>图的分类</h2><ul><li><p><strong>无向图</strong></p><p>顶点v的度：依附于该顶点的边的条数，记为TD(v)。</p><p> <img src="/2022/11/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E5%9B%BE/1668148777129.png" alt="1668148777129"></p></li><li><p><strong>有向图</strong></p><p>入度：以顶点v为终点的有向边的数目，记为ID(v)</p><p>出度：以顶点v为起点的有向边的数目，记为OD(v)</p><p>顶点v的度：其入度和出度之和，TD(v) &#x3D; ID(v) +  OD(v)</p><p><img src="/2022/11/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E5%9B%BE/1668153808046.png" alt="1668153808046"></p></li><li><p><strong>简单图</strong></p></li><li><p><strong>多重图</strong></p><p>路径：顶点vp到顶点vq之间的一条路径是指顶点序列。</p><p>回路：第一个顶点到最后一个顶点相同的路径</p></li></ul>]]></content>
       
       
       <categories>
