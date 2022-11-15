@@ -4,11 +4,49 @@
   
     
     <entry>
+      <title>mybatis笔记</title>
+      <link href="/2022/11/15/mybatis%E7%AC%94%E8%AE%B0/"/>
+      <url>/2022/11/15/mybatis%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Vue笔记</title>
+      <link href="/2022/11/14/Vue%E7%AC%94%E8%AE%B0/"/>
+      <url>/2022/11/14/Vue%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="路由router"><a href="#路由router" class="headerlink" title="路由router"></a>路由router</h2><p><strong>单页面(SPA)应用</strong>：</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>maven相关学习</title>
       <link href="/2022/11/14/maven%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/"/>
       <url>/2022/11/14/maven%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="maven-clean"><a href="#maven-clean" class="headerlink" title="maven-clean"></a>maven-clean</h2><p>清除由项目编译创建的target</p><p><img src="/2022/11/14/maven%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/20180730174800406.png" alt="img"></p><p>项目编译完毕会有target目录。clean效果就是删掉target目标文件夹。</p><h2 id="maven-install"><a href="#maven-install" class="headerlink" title="maven-install"></a>maven-install</h2><p>将当前项目的jar包安装放置到maven仓库，供其他项目使用。</p><p>比如：我自己创建了一个模块A，别的模块B中的pom文件里需要依赖A，这时候就需要把A模块install到maven仓库。这样才能compile成功。</p><p><strong>例子</strong></p><p><strong>Speak类</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">package com.imooc.maven01.util;</span><br><span class="line"> </span><br><span class="line">import com.imooc.maven01.model.HelloWorld;</span><br><span class="line"> </span><br><span class="line">public class Speak&#123;</span><br><span class="line">public String sayHi()&#123;</span><br><span class="line">return new HelloWorld().sayHello();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">package com.imooc.maven01.util;</span><br><span class="line"> </span><br><span class="line">import org.junit.*;</span><br><span class="line">import org.junit.Assert.*;</span><br><span class="line"> </span><br><span class="line">public class SpeakTest&#123;</span><br><span class="line">@Test</span><br><span class="line">public void testHi()&#123;</span><br><span class="line">Assert.assertEquals(&quot;Hello World!&quot;, new Speak().sayHi());</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">package com.imooc.maven01.util;</span><br><span class="line"> </span><br><span class="line">import org.junit.*;</span><br><span class="line">import org.junit.Assert.*;</span><br><span class="line"> </span><br><span class="line">public class SpeakTest&#123;</span><br><span class="line">@Test</span><br><span class="line">public void testHi()&#123;</span><br><span class="line">Assert.assertEquals(&quot;Hello World!&quot;, new Speak().sayHi());</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; </span><br><span class="line">xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; </span><br><span class="line">xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 </span><br><span class="line">http://maven.apache.org/maven-v4_0_0.xsd&quot;&gt;</span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line"></span><br><span class="line">&lt;groupId&gt;com.imooc.maven02&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;maven02-model02&lt;/artifactId&gt;</span><br><span class="line">&lt;version&gt;0.0.1SNAPSHOT&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">&lt;properties&gt;</span><br><span class="line"> </span><br><span class="line">&lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;</span><br><span class="line"> </span><br><span class="line">&lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;</span><br><span class="line">&lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;</span><br><span class="line">&lt;/properties&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependencies&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">&lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">&lt;version&gt;4.10&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;!--maven01-model:是需要自己添加进仓库里面,才能被找到--&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">&lt;groupId&gt;com.imooc.maven01&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;maven01-model&lt;/artifactId&gt;  </span><br><span class="line">&lt;version&gt;0.0.1SNAPSHOT&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
